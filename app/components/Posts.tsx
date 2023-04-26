@@ -28,7 +28,7 @@ function Posts() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 py-6 gap-7">
           <div>
-            <h2 className="font-light text-6xl"><Link href={`/posts/${first.id}`}>{first.title}</Link></h2>
+            <h2 className="font-light text-6xl hover:text-blue-500"><Link href={`/posts/${first.id}`}>{first.title}</Link></h2>
             <p className={clsx('font-light text-xl py-2 md:py-4', inter.className)}>{first.date}</p>
           </div>
           <div>
@@ -44,9 +44,10 @@ function Posts() {
           {recentPosts.map(post =>(
             <div>
               <img className="w-full" src={post.image} alt="Alt Description"></img>
-              <div className="font-bold text-xl mb-2">
+              <div className="font-light text-3xl py-2 hover:text-blue-400">
                 <Link href={`/posts/${post.id}`}>{post.title}</Link>
               </div>
+              <div className="pb-2">{post.date}</div>
               <div className="text-gray-700 text-base">{post.excerpt}</div>
             </div>
           ))}
