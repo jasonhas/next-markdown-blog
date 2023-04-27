@@ -32,7 +32,7 @@ function Posts() {
             <p className={clsx('font-light text-xl py-2 md:py-4', inter.className)}>{first.date}</p>
           </div>
           <div>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis et distinctio, dolores, iure maxime atque voluptatem quas dolorem quis minima laudantium rerum aliquid qui tempore blanditiis, hic velit vero debitis.
+           {first.excerpt}
           </div>
         </div>
       </section>
