@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { FaGithub, FaTwitter,FaInstagram } from 'react-icons/fa'
+import { TfiYoutube } from 'react-icons/tfi'
 import clsx from 'clsx'
 import { Poppins } from 'next/font/google'
 
@@ -22,6 +23,11 @@ const Footer = () => {
             <li>
               <a href='#'>
                 <FaGithub/>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <TfiYoutube/>
               </a>
             </li>
             <li>

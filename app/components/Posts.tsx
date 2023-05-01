@@ -15,7 +15,7 @@ function Posts() {
     const recentPosts = getPreviousTwoPosts()
 
   return (
-    <div>
+    <div className="pt-[100px] md:p-0">
       {postOne.map(first => (
       <section>
         <div>
