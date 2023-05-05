@@ -51,6 +51,7 @@ const Navbar = () => {
                         <h4 className={clsx(poppin.className, ' text-center md:text-left text-lg mt-5 md:pl-8')}>A Blog of Daily AI Images</h4>
                     </div>
                 </div>
+                {/* Mobile */}
                 <div className='lg:hidden shadow-md w-full fixed top-0 left-0'>
                     <div className='md:flex items-center bg-white md:px-10 py-4'>
                         <div className='font-bold text-4xl cursor-pointer flex items-center px-7'>
@@ -59,7 +60,7 @@ const Navbar = () => {
                         <div className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden' onClick={()=>setOpen(!open)}>
                             {button}
                         </div>
-                        <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-15 opacity-100':'top-[-490px'} md:opacity-100 opacity-0`}>
+                        <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-15 opacity-100':'top-[-490px]'} md:opacity-100 opacity-0`}>
                             {
                                 Links.map((Link)=>(
                                     <li key={Link.name} className='md:ml-8 text-xl md:my-0 my-7'>

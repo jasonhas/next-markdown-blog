@@ -42,7 +42,7 @@ export default async function Post({ params }: { params: { postId: string}}) {
     const pubDate = getFormattedDate(date)
 
     return (
-        <main>
+        <main className="mt-28 md:mt-0">
             <div className="mx-auto max-w-7xl p-7">
                 <Image 
                 src={image}

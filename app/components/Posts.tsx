@@ -15,7 +15,7 @@ function Posts() {
     const recentPosts = getPreviousTwoPosts()
 
   return (
-    <div className="pt-[100px] md:p-0">
+    <div className="mt-28 md:mt-0 md:p-0">
       {postOne.map(first => (
       <section>
         <div>
@@ -39,7 +39,7 @@ function Posts() {
 
        ))}
       <section>
-        <h2 className={clsx("text-bold text-4xl py-5", inter.className)}>Recent Posts</h2>
+        <h2 className={clsx("text-4xl py-5", inter.className)}>Recent Posts</h2>
         <div className="flex flex-col md:flex-row gap-8">
           {recentPosts.map(post =>(
             <div>
